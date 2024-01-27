@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    min-width: 0;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    transition: linear 0.5s;
+    height: 100vh;
+    margin: 0;
+}
+h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+input {
+    border: none;
+    outline-color: none;
+}
+.desktop {
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/Windows.png');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.window-main {
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    height: 600px;
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0.534);
+}
+.recycle-bin {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    height: 60px;
+    width: 90px;
+    background-image: url('./images/trash.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.folder-shortcut {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    height: 60px;
+    width: 90px;
+    background-image: url('./images/folder.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.taskbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.623);
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.start, .explorer, .chrome, .vscode {
+    width: 60px;
+    height: 100%;
+    background-size: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.start {
+    background-image: url('./images/start.png');
+
+}
+.search {
+    width: 250px;
+    height: 100%;
+    padding-left: 40px;
+    background-color: rgba(46, 46, 46, 0.726);
+    color: rgb(179, 179, 179);
+    font-size: 16px;
+}
+.search-icon {
+    position: absolute;
+    left: 70px;
+}
+.explorer {
+    background-image: url('./images/explorer.png');
+}
+.vscode {
+    background-image: url('./images/vscode.png');
+
+}
+.chrome {
+    background-image: url('./images/chrome.png');
+}
+.right {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.material-symbols-sharp {
+    font-size: 20px;
+    display: block;
+    color: white;
+}
+.p {
+    color: white;
+    padding: 0 3px;
+}
+.thing {
+    padding: 0 10px;
+}
