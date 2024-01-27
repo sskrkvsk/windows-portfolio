@@ -18,6 +18,9 @@ h1, h2, h3, p, ul, ol {
 a {
     text-decoration: none;
 }
+/* img {
+    display: block;
+} */
 input {
     border: none;
     outline-color: none;
@@ -125,13 +128,16 @@ input {
     left: -200px;
     height: 600px;
     width: 800px;
-    background-color: rgba(0, 0, 0, 0.534);
+    border: .5px solid rgb(43, 43, 43);
     display: flex;
+    flex-direction: column;
 }
 .header {
     width: 100%;
     height: 50px;
     background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 .header-top, .header-bot {
     height: 50%;
@@ -150,7 +156,6 @@ input {
     margin-right: 10px;
     margin-left: 5px;
     border-right: 1px solid rgba(104, 104, 104, 0.692);
-    /* padding: 0 10px; */
     background-image: url('./images/folder.png');
     background-size: 18px;
     background-position: center;
@@ -164,10 +169,6 @@ input {
 .small-file{
     height: 20px;
     width: 20px;
-    /* margin-right: 10px; */
-    /* margin-left: 5px; */
-    /* border-right: 1px solid rgba(104, 104, 104, 0.692); */
-    /* padding: 0 10px; */
     background-image: url('./images/window/file.png');
     background-size: 15px;
     background-position: center;
@@ -175,7 +176,6 @@ input {
 }
 .name {
     color: white;
-    font-size: 14px;
     text-align: center;
     margin-top: 2px;
     margin-left: 5px;
@@ -195,4 +195,124 @@ input {
 }
 .tab-1 {
     padding-left: 20px;
+}
+.searches {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(25, 25, 25);
+    display: flex;
+    align-items: center;
+}
+.search-item {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.search-1 {
+    width: 50%;
+    height: 75%;
+    border: 1px solid rgb(138, 138, 138);
+    margin-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-1-left, .search-1-right {
+    display: flex;
+    align-items: center;
+}
+.search-2 {
+    width: 31%;
+    height: 75%;
+    border: 1px solid rgb(138, 138, 138);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.nav {
+    background-color: rgb(25, 25, 25);
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.nav-p {
+    font-size: 13px;
+    display: flex;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.pc-above {
+    position: absolute;
+    width: 16px;
+    bottom: -5px;
+    left: -3px;
+}
+.globe {
+    width: 18px;
+    position: absolute;
+    top: -2px;
+}
+.field {
+    width: 80%;
+    height: 100%;
+    background-color: rgb(37, 37, 37);
+}
+.folder-container {
+    padding-left: 20px;
+    margin-top: 5px;
+    font-size: 13px;
+}
+.folder {
+    display: flex;
+}
+.name-thing {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.p-date {
+    width: 21%;
+}
+.foot {
+    height: 30px;
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+    display: flex;
+    justify-content: space-between;
+}
+.quantity {
+    font-size: 13px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+.lil-icons {
+    display: flex;
+    align-items: center;
+}
+.sort {
+    padding-left: 20px;
+    display: flex;
+}
+.sort-item {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3px;
+    padding-left: 5px;
+    border-right: 1px solid rgb(138, 138, 138);
+    color: rgb(224, 224, 224);
+}
+.transparent {
+    opacity: 0;
 }
