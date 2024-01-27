@@ -27,6 +27,7 @@ input {
 }
 /* DESKTOP ///////////////////////////////////////////////////////////////*/
 .desktop {
+    position: relative;
     width: 100%;
     height: 100%;
     background-image: url('./images/Windows.png');
@@ -36,23 +37,35 @@ input {
 }
 .recycle-bin {
     position: absolute;
-    top: 2%;
-    left: 2%;
-    height: 60px;
+    top: 20px;
+    left: 30px;
+    padding: 10px 60px;
+    height: 120px;
     width: 90px;
     background-image: url('./images/trash.png');
-    background-size: contain;
+    background-size: 55px;
+    background-position: center;
     background-repeat: no-repeat;
+    border: 1px solid transparent;
 }
 .folder-shortcut {
     position: absolute;
     top: 40%;
     left: 50%;
-    height: 60px;
+    padding: 10px 60px;
+    height: 120px;
     width: 90px;
     background-image: url('./images/folder.png');
-    background-size: contain;
+    background-size: 90px;
+    border: 1px solid transparent;
+    background-position: center;
     background-repeat: no-repeat;
+}
+.shortcut-name {
+    font-size: 13px;
+    position: absolute;
+    left: 25px;
+    bottom: 0px;
 }
 /* TASKBAR //////////////////////////////////////////////////////////*/
 .taskbar {
@@ -72,9 +85,9 @@ input {
     /* justify-content: center; */
 }
 .start, .explorer, .chrome, .vscode {
-    width: 60px;
+    width: 45px;
     height: 100%;
-    background-size: 35px;
+    background-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -92,7 +105,7 @@ input {
 }
 .search-icon {
     position: absolute;
-    left: 70px;
+    left: 50px;
 }
 .explorer {
     background-image: url('./images/explorer.png');
@@ -119,44 +132,66 @@ input {
     padding: 0 3px;
 }
 .thing {
+    height: 100%;
     padding: 0 10px;
+    padding-top: 11px;
+    margin-right: 5px;
+    border-right: 1px solid rgb(109, 109, 109);
 }
 /* WINDOW ////////////////////////////////////////////////////////////////////////////////*/
 .window-main {
     position: absolute;
-    top: -200px;
-    left: -200px;
+    top: 200px;
+    left: 600px;
     height: 600px;
     width: 800px;
     border: .5px solid rgb(43, 43, 43);
     display: flex;
     flex-direction: column;
+    transition: height .3s linear, transform .3s linear, opacity .3s;
+}
+.window-hide {
+    height: 200px;
+    width: 400px;
+    transform: translate(-400px, 400px);
+    opacity: 0;
+}
+.window-full {
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
 }
 .header {
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: black;
     display: flex;
     flex-direction: column;
 }
 .header-top, .header-bot {
-    height: 50%;
     width: 100%;
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
+}
+.header-top {
+    height: 60%;
 }
 .header-left, .header-right {
     display: flex;
 }
+.header-right {
+    height: 100%;
+}
 .small-folder {
     height: 20px;
-    width: 30px;
+    width: 25px;
+    margin-top: 2px;
     margin-right: 10px;
     margin-left: 5px;
     border-right: 1px solid rgba(104, 104, 104, 0.692);
-    background-image: url('./images/folder.png');
+    background-image: url('./images/window/small-folder.png');
     background-size: 18px;
     background-position: center;
     background-repeat: no-repeat;
@@ -167,7 +202,7 @@ input {
     margin-left: 0px;
 }
 .small-file{
-    height: 20px;
+    height: 25px;
     width: 20px;
     background-image: url('./images/window/file.png');
     background-size: 15px;
@@ -177,14 +212,15 @@ input {
 .name {
     color: white;
     text-align: center;
-    margin-top: 2px;
+    margin-top: 7px;
     margin-left: 5px;
 }
 .small-r {
     height: 100%;
     font-size: 15px;
-    padding: 4px 15px;
-    align-self: center;
+    padding-top: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .close, .minimize {
     font-size: 20px;
@@ -240,13 +276,15 @@ input {
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding-left: 25px;
     padding-top: 10px;
 }
 .nav-p {
+    
     font-size: 13px;
+    width: 100%;
     display: flex;
     padding-top: 6px;
+    padding-left: 25px;
     padding-bottom: 6px;
 }
 .pc-above {
@@ -289,6 +327,10 @@ input {
     display: flex;
     justify-content: space-between;
 }
+.foot-thing {
+    height: 100%;
+    padding-top: 12px;
+}
 .quantity {
     font-size: 13px;
     padding-left: 15px;
@@ -300,7 +342,6 @@ input {
     align-items: center;
 }
 .sort {
-    padding-left: 20px;
     display: flex;
 }
 .sort-item {
@@ -315,4 +356,22 @@ input {
 }
 .transparent {
     opacity: 0;
+}
+.display-none {
+    display: none;
+}
+.explorer:hover, .recycle-bin:hover, .vscode:hover, .chrome:hover, .folder-shortcut:hover, .foot-thing:hover, .start:hover, .nav-p:hover, .sort-item:hover, .tab:hover, .small-r:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: default;
+      /* border: 1px solid rgba(255, 255, 255, 0.4); */
+}
+.close:hover {
+    background-color: rgba(201, 13, 13, 0.9);
+}
+.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.explorer-active {
+    border-bottom: 2px solid rgb(185, 185, 185);
 }

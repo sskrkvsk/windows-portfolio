@@ -21,264 +21,291 @@
   </head>
   <body>
     <main class="desktop">
-      <div class="recycle-bin"></div>
-      <div class="folder-shortcut">
-        <div class="window-main">
-          <div class="header">
-            <div class="header-top">
-              <div class="header-left">
-                <div class="small-folder"></div>
-                <div class="small-file">
-                  <span
-                    class="material-symbols-sharp"
-                    style="
-                      color: black;
-                      font-size: 15px;
-                      text-align: center;
-                      padding-top: 2px;
-                    "
-                  >
-                    done
-                  </span>
-                </div>
-                <div class="small-folder small-folder-2"></div>
-                <span
-                  class="material-symbols-sharp"
-                  style="border-right: 1px solid rgba(104, 104, 104, 0.692)"
-                >
-                  arrow_drop_down
-                </span>
-                <p class="name" style="font-size: 12px">Serhii Krakovskyi</p>
-              </div>
-              <div class="header-right">
-                <span class="material-symbols-sharp small-r 'minimize">
-                  minimize
-                </span>
-                <span class="material-symbols-sharp small-r">
-                  check_box_outline_blank
-                </span>
-                <span class="material-symbols-sharp small-r close">
-                  close
-                </span>
-              </div>
-            </div>
-            <div class="header-bot">
-              <div class="header-left">
-                <p class="tab" style="padding-left: 20px">File</p>
-                <p class="tab">Home</p>
-                <p class="tab">Share</p>
-                <p class="tab">View</p>
-              </div>
-              <div class="header-right">
-                <span
-                  class="material-symbols-sharp more"
-                  style="margin-right: 3px"
-                >
-                  expand_more
-                </span>
-                <span
-                  class="material-symbols-sharp"
-                  style="margin-right: 3px; font-size: 15px; margin-top: 2px"
-                >
-                  help
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="searches">
-            <span
-              class="material-symbols-sharp search-item"
-              style="padding: 10px; color: rgb(109, 109, 109)"
-            >
-              arrow_back
-            </span>
-            <span
-              class="material-symbols-sharp search-item"
-              style="padding: 10px; color: rgb(109, 109, 109)"
-            >
-              arrow_forward
-            </span>
-            <span
-              class="material-symbols-sharp search-item"
-              style="font-weight: 400; color: rgb(109, 109, 109)"
-            >
-              keyboard_arrow_down
-            </span>
-            <span class="material-symbols-sharp search-item">
-              arrow_upward
-            </span>
-            <div class="search-1">
-              <div class="search-1-left">
-                <img
-                  src="./images/folder.png"
-                  alt=""
-                  width="18px"
-                  style="margin: 3px"
-                />
-                <span
-                  class="material-symbols-sharp"
-                  style="font-size: 14px; color: rgb(109, 109, 109)"
-                >
-                  chevron_right
-                </span>
-                <p style="font-size: 13px">Serhii Krakovskyi</p>
-              </div>
-              <div class="search-1-right">
-                <span
-                  class="material-symbols-sharp"
-                  style="font-size: 15px; color: rgb(109, 109, 109)"
-                >
-                  keyboard_arrow_down
-                </span>
+      <div class="recycle-bin shortcut">
+        <p class="shortcut-name">Recycle Bin</p>
+      </div>
+      <div class="folder-shortcut shortcut">
+        <p class="shortcut-name" style="left: 10px; bottom: 0px">
+          Serhii Krakovskyi
+        </p>
+      </div>
+      <div class="window-main display-none">
+        <div class="header">
+          <div class="header-top">
+            <div class="header-left">
+              <div class="small-folder"></div>
+              <div class="small-file">
                 <span
                   class="material-symbols-sharp"
                   style="
+                    color: black;
                     font-size: 15px;
-                    font-weight: 700;
-                    color: rgb(109, 109, 109);
+                    text-align: center;
+                    padding-top: 5px;
                   "
                 >
-                  refresh
+                  done
                 </span>
               </div>
-            </div>
-            <div class="search-2">
-              <p
+              <div class="small-folder small-folder-2"></div>
+              <span
+                class="material-symbols-sharp"
                 style="
-                  font-size: 12px;
-                  color: rgb(109, 109, 109);
-                  margin-left: 10px;
+                  border-right: 1px solid rgba(104, 104, 104, 0.692);
+                  padding-top: 2px;
                 "
               >
-                Search Serhii Krakovskyi
-              </p>
+                arrow_drop_down
+              </span>
+              <p class="name" style="font-size: 12px">Serhii Krakovskyi</p>
+            </div>
+            <div class="header-right">
+              <span class="material-symbols-sharp small-r minimize">
+                horizontal_rule
+              </span>
               <span
-                class="material-symbols-sharp small-search"
+                class="material-symbols-sharp small-r full"
+                style="padding-top: 5px"
+              >
+                check_box_outline_blank
+              </span>
+              <span class="material-symbols-sharp small-r close"> close </span>
+            </div>
+          </div>
+          <div class="header-bot">
+            <div class="header-left">
+              <p class="tab" style="padding-left: 20px">File</p>
+              <p class="tab">Home</p>
+              <p class="tab">Share</p>
+              <p class="tab">View</p>
+            </div>
+            <div class="header-right">
+              <span
+                class="material-symbols-sharp more"
+                style="margin-right: 3px"
+              >
+                expand_more
+              </span>
+              <span
+                class="material-symbols-sharp"
+                style="margin-right: 3px; font-size: 15px; margin-top: 2px"
+              >
+                help
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="searches">
+          <span
+            class="material-symbols-sharp search-item"
+            style="padding: 10px; color: rgb(109, 109, 109)"
+          >
+            arrow_back
+          </span>
+          <span
+            class="material-symbols-sharp search-item"
+            style="padding: 10px; color: rgb(109, 109, 109)"
+          >
+            arrow_forward
+          </span>
+          <span
+            class="material-symbols-sharp search-item"
+            style="font-weight: 400; color: rgb(109, 109, 109)"
+          >
+            keyboard_arrow_down
+          </span>
+          <span class="material-symbols-sharp search-item"> arrow_upward </span>
+          <div class="search-1">
+            <div class="search-1-left">
+              <img
+                src="./images/folder.png"
+                alt=""
+                width="18px"
+                style="margin: 3px"
+              />
+              <span
+                class="material-symbols-sharp"
+                style="font-size: 14px; color: rgb(109, 109, 109)"
+              >
+                chevron_right
+              </span>
+              <p style="font-size: 13px">Serhii Krakovskyi</p>
+            </div>
+            <div class="search-1-right">
+              <span
+                class="material-symbols-sharp"
+                style="font-size: 15px; color: rgb(109, 109, 109)"
+              >
+                keyboard_arrow_down
+              </span>
+              <span
+                class="material-symbols-sharp"
                 style="
                   font-size: 15px;
                   font-weight: 700;
                   color: rgb(109, 109, 109);
                 "
               >
-                search
+                refresh
               </span>
             </div>
           </div>
-          <section class="main">
-            <nav class="nav">
-              <p class="nav-p">
-                <img
-                  src="./images/window/star.png"
-                  alt=""
-                  width="13px"
-                  style="margin-right: 3px"
-                />Quick access
-              </p>
-              <p class="nav-p">
-                <img
+          <div class="search-2">
+            <p
+              style="
+                font-size: 12px;
+                color: rgb(109, 109, 109);
+                margin-left: 10px;
+              "
+            >
+              Search Serhii Krakovskyi
+            </p>
+            <span
+              class="material-symbols-sharp small-search"
+              style="
+                font-size: 15px;
+                font-weight: 700;
+                color: rgb(109, 109, 109);
+              "
+            >
+              search
+            </span>
+          </div>
+        </div>
+        <section class="main">
+          <nav class="nav">
+            <p class="nav-p">
+              <img
+                src="./images/window/star.png"
+                alt=""
+                width="13px"
+                style="margin-right: 3px"
+              />Quick access
+            </p>
+            <p class="nav-p">
+              <img
+                src="./images/window/pc.png"
+                alt=""
+                width="20px"
+                style="margin-right: 3px"
+              />This PC
+            </p>
+            <p class="nav-p" style="gap: 22px">
+              <span style="position: relative">
+                <img src="./images/window/globe.png" class="globe" alt="" /><img
                   src="./images/window/pc.png"
                   alt=""
-                  width="20px"
-                  style="margin-right: 3px"
-                />This PC
-              </p>
-              <p class="nav-p" style="gap: 22px">
-                <span style="position: relative">
-                  <img
-                    src="./images/window/globe.png"
-                    class="globe"
-                    alt=""
-                  /><img src="./images/window/pc.png" alt="" class="pc-above" />
+                  class="pc-above"
+                />
+              </span>
+              Network
+            </p>
+          </nav>
+          <div class="field">
+            <div class="sort">
+              <div class="sort-item" style="width: 40%; padding-left: 20px">
+                <p>Name</p>
+                <span class="material-symbols-sharp transparent">
+                  expand_more
                 </span>
-                Network
-              </p>
-            </nav>
-            <div class="field">
-              <div class="sort">
-                <div class="sort-item" style="width: 40%">
-                  <p>Name</p>
-                  <span class="material-symbols-sharp transparent">
-                    expand_more
-                  </span>
-                </div>
-                <div class="sort-item" style="width: 20%">
-                  <p>Date Modified</p>
-                  <span class="material-symbols-sharp transparent">
-                    expand_more
-                  </span>
-                </div>
-                <div class="sort-item" style="width: 15%">
-                  <p>Type</p>
-                  <span class="material-symbols-sharp transparent">
-                    expand_more
-                  </span>
-                </div>
-                <div class="sort-item" style="width: 10%">
-                  <p>Size</p>
-                  <span class="material-symbols-sharp transparent">
-                    expand_more
-                  </span>
-                </div>
               </div>
-              <div class="folder-container">
-                <div class="folder">
-                  <div class="name-thing">
-                    <img src="./images/folder.png" width="20px" alt="" />
-                    <p>Credit Card</p>
-                  </div>
-                  <p class="p-date">12/12/2012 06:00</p>
-                  <p class="p-type">File folder</p>
-                </div>
-                <div class="folder">
-                  <div class="name-thing">
-                    <img src="./images/folder.png" width="20px" alt="" />
-                    <p>Collection App</p>
-                  </div>
-                  <p class="p-date">12/12/2012 06:00</p>
-                  <p class="p-type">File folder</p>
-                </div>
-                <div class="folder">
-                  <div class="name-thing">
-                    <img src="./images/folder.png" width="20px" alt="" />
-                    <p>Login Page</p>
-                  </div>
-                  <p class="p-date">12/12/2012 06:00</p>
-                  <p class="p-type">File folder</p>
-                </div>
-                <div class="folder">
-                  <div class="name-thing">
-                    <img src="./images/folder.png" width="20px" alt="" />
-                    <p>MS Clone</p>
-                  </div>
-                  <p class="p-date">12/12/2012 06:00</p>
-                  <p class="p-type">File folder</p>
-                </div>
-                <div class="folder">
-                  <div class="name-thing">
-                    <img src="./images/folder.png" width="20px" alt="" />
-                    <p>Simon Game</p>
-                  </div>
-                  <p class="p-date">12/12/2012 06:00</p>
-                  <p class="p-type">File folder</p>
-                </div>
+              <div class="sort-item" style="width: 20%">
+                <p>Date Modified</p>
+                <span class="material-symbols-sharp transparent">
+                  expand_more
+                </span>
+              </div>
+              <div class="sort-item" style="width: 15%">
+                <p>Type</p>
+                <span class="material-symbols-sharp transparent">
+                  expand_more
+                </span>
+              </div>
+              <div class="sort-item" style="width: 10%">
+                <p>Size</p>
+                <span class="material-symbols-sharp transparent">
+                  expand_more
+                </span>
               </div>
             </div>
-          </section>
-          <div class="foot">
-            <p class="quantity">5 items |</p>
-            <div class="lil-icons">
-              <img
-                src="./images/window/list.png"
-                alt=""
-                width="20px"
-                style="padding-right: 5px"
-              /><img
-                src="./images/window/image.png"
-                alt=""
-                width="20px"
-                style="padding-right: 5px"
-              />
+            <div class="folder-container">
+              <div class="folder">
+                <div class="name-thing">
+                  <img
+                    src="./images/window/small-folder.png"
+                    width="18px"
+                    alt=""
+                  />
+                  <p>Credit Card</p>
+                </div>
+                <p class="p-date">12/12/2012 06:00</p>
+                <p class="p-type">File folder</p>
+              </div>
+              <div class="folder">
+                <div class="name-thing">
+                  <img
+                    src="./images/window/small-folder.png"
+                    width="18px"
+                    alt=""
+                  />
+                  <p>Collection App</p>
+                </div>
+                <p class="p-date">12/12/2012 06:00</p>
+                <p class="p-type">File folder</p>
+              </div>
+              <div class="folder">
+                <div class="name-thing">
+                  <img
+                    src="./images/window/small-folder.png"
+                    width="18px"
+                    alt=""
+                  />
+                  <p>Login Page</p>
+                </div>
+                <p class="p-date">12/12/2012 06:00</p>
+                <p class="p-type">File folder</p>
+              </div>
+              <div class="folder">
+                <div class="name-thing">
+                  <img
+                    src="./images/window/small-folder.png"
+                    width="18px"
+                    alt=""
+                  />
+                  <p>MS Clone</p>
+                </div>
+                <p class="p-date">12/12/2012 06:00</p>
+                <p class="p-type">File folder</p>
+              </div>
+              <div class="folder">
+                <div class="name-thing">
+                  <img
+                    src="./images/window/small-folder.png"
+                    width="18px"
+                    alt=""
+                  />
+                  <p>Simon Game</p>
+                </div>
+                <p class="p-date">12/12/2012 06:00</p>
+                <p class="p-type">File folder</p>
+              </div>
             </div>
+          </div>
+        </section>
+        <div class="foot">
+          <p class="quantity">5 items |</p>
+          <div class="lil-icons">
+            <img
+              src="./images/window/list.png"
+              alt=""
+              width="20px"
+              style="padding-right: 5px"
+            /><img
+              src="./images/window/image.png"
+              alt=""
+              width="20px"
+              style="padding-right: 5px"
+            />
           </div>
         </div>
       </div>
@@ -287,19 +314,31 @@
       <div class="left">
         <div class="start"></div>
         <span class="material-symbols-sharp search-icon"> search </span>
-        <input type="text" class="search" value="Search" />
-        <div class="explorer"></div>
+        <input type="text" class="search" placeholder="Search" />
+        <div class="explorer explorer-active" style="margin-left: 3px"></div>
         <div class="vscode"></div>
         <div class="chrome"></div>
       </div>
       <div class="right">
-        <span class="material-symbols-sharp"> expand_less </span>
-        <span class="material-symbols-sharp"> battery_full_alt </span>
-        <span class="material-symbols-sharp"> rss_feed </span>
-        <span class="material-symbols-sharp"> volume_up </span>
-        <p class="p lang">ENG</p>
-        <p class="p time">05:00</p>
-        <span class="material-symbols-sharp thing"> tooltip </span>
+        <span class="material-symbols-sharp foot-thing"> expand_less </span>
+        <span
+          class="material-symbols-sharp foot-thing"
+          style="padding-top: 11px"
+        >
+          battery_full_alt
+        </span>
+        <span
+          class="material-symbols-sharp foot-thing"
+          style="font-size: 15px; padding-top: 13px"
+        >
+          rss_feed
+        </span>
+        <span class="material-symbols-sharp foot-thing" style="font-size: 18px">
+          volume_up
+        </span>
+        <p class="p lang foot-thing" style="font-size: 14px">ENG</p>
+        <p class="p time foot-thing" style="font-size: 14px">05:00</p>
+        <span class="material-symbols-sharp thing foot-thing"> tooltip </span>
       </div>
     </footer>
     <script src="./main.js"></script>
