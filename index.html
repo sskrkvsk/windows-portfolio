@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
+    <!-- DESKTOP -->
     <main class="desktop">
       <div class="recycle-bin shortcut">
         <p class="shortcut-name">Recycle Bin</p>
@@ -29,7 +30,9 @@
           Serhii Krakovskyi
         </p>
       </div>
+      <!-- WINDOW -->
       <div class="window-main display-none">
+        <!-- HEADER 2 LINES -->
         <div class="header">
           <div class="header-top">
             <div class="header-left">
@@ -57,7 +60,9 @@
               >
                 arrow_drop_down
               </span>
-              <p class="name" style="font-size: 12px">Serhii Krakovskyi</p>
+              <p class="name" id="topName" style="font-size: 12px">
+                Serhii Krakovskyi
+              </p>
             </div>
             <div class="header-right">
               <span class="material-symbols-sharp small-r minimize">
@@ -95,9 +100,11 @@
             </div>
           </div>
         </div>
+        <!-- SEARCH 1 LINE -->
         <div class="searches">
           <span
-            class="material-symbols-sharp search-item"
+            id="back"
+            class="material-symbols-sharp search-item back"
             style="padding: 10px; color: rgb(109, 109, 109)"
           >
             arrow_back
@@ -116,7 +123,7 @@
           </span>
           <span class="material-symbols-sharp search-item"> arrow_upward </span>
           <div class="search-1">
-            <div class="search-1-left">
+            <div id="leftS" class="search-1-left">
               <img
                 src="./images/folder.png"
                 alt=""
@@ -172,6 +179,7 @@
             </span>
           </div>
         </div>
+        <!-- MAIN FIELD -->
         <section class="main">
           <nav class="nav">
             <p class="nav-p">
@@ -228,6 +236,7 @@
                 </span>
               </div>
             </div>
+            <!-- FOLDERS -->
             <div class="folder-container">
               <div class="folder">
                 <div class="name-thing">
@@ -272,26 +281,48 @@
                     width="18px"
                     alt=""
                   />
-                  <p>MS Clone</p>
-                </div>
-                <p class="p-date">12/12/2012 06:00</p>
-                <p class="p-type">File folder</p>
-              </div>
-              <div class="folder">
-                <div class="name-thing">
-                  <img
-                    src="./images/window/small-folder.png"
-                    width="18px"
-                    alt=""
-                  />
                   <p>Simon Game</p>
                 </div>
                 <p class="p-date">12/12/2012 06:00</p>
                 <p class="p-type">File folder</p>
               </div>
+              <!-- FILES -->
+              <div id="pr0" class="file display-none">
+                <div class="name-thing">
+                  <img src="./images/window/document.png" width="18px" alt="" />
+                  <p>Credit-card-project.info</p>
+                </div>
+                <p class="p-date">12/12/2012 06:00</p>
+                <p class="p-type">Text Document</p>
+              </div>
+              <div id="pr1" class="file display-none">
+                <div class="name-thing">
+                  <img src="./images/window/document.png" width="18px" alt="" />
+                  <p>Collection-project.info</p>
+                </div>
+                <p class="p-date">12/12/2012 06:00</p>
+                <p class="p-type">Text Document</p>
+              </div>
+              <div id="pr2" class="file display-none">
+                <div class="name-thing">
+                  <img src="./images/window/document.png" width="18px" alt="" />
+                  <p>Login-project.info</p>
+                </div>
+                <p class="p-date">12/12/2012 06:00</p>
+                <p class="p-type">Text Document</p>
+              </div>
+              <div id="pr3" class="file display-none">
+                <div class="name-thing">
+                  <img src="./images/window/document.png" width="18px" alt="" />
+                  <p>Simon-game-project.info</p>
+                </div>
+                <p class="p-date">12/12/2012 06:00</p>
+                <p class="p-type">Text Document</p>
+              </div>
             </div>
           </div>
         </section>
+        <!-- FOOTER -->
         <div class="foot">
           <p class="quantity">5 items |</p>
           <div class="lil-icons">
@@ -309,13 +340,305 @@
           </div>
         </div>
       </div>
+      <!-- NOTEPAD -->
+      <article id="notepad1" class="notepad display-none">
+        <header
+          class="header"
+          style="
+            background-color: aliceblue;
+            height: 55px;
+            border-bottom: 1px solid rgb(230, 230, 230);
+          "
+        >
+          <div class="header-top">
+            <div class="header-left">
+              <img src="./images/notepad.png" width="20px" alt="" />
+              <p id="notepad-name" style="margin-top: 2px">
+                Credit card - Notepad
+              </p>
+            </div>
+            <div class="header-right">
+              <span
+                class="material-symbols-sharp small-r minimize"
+                style="color: black"
+              >
+                horizontal_rule
+              </span>
+              <span
+                class="material-symbols-sharp small-r full"
+                style="padding-top: 5px; color: black"
+              >
+                check_box_outline_blank
+              </span>
+              <span
+                class="material-symbols-sharp small-r close"
+                style="color: black"
+              >
+                close
+              </span>
+            </div>
+          </div>
+          <div class="header-bottom">
+            <p class="hover">File</p>
+            <p class="hover">Edit</p>
+            <p class="hover">Format</p>
+            <p class="hover">View</p>
+            <p class="hover">Help</p>
+          </div>
+        </header>
+        <div class="content">
+          <h1>Credit Card</h1>
+          <div class="image-container">
+            <img src="./images/screenshots/card-d.png" alt="" width="300px" />
+            <img src="./images/screenshots/card-w.png" alt="" width="300px" />
+          </div>
+          <p class="about">
+            - Credit Card data taking form with neumorphic design, animations
+            and different color palettes
+          </p>
+          <p class="about">
+            - With this project I wanted to show my front-end abilities /
+            styling interfaces
+          </p>
+          <div class="links">
+            <a href="https://github.com/sskrkvsk/credit-card">GitHub</a>
+            <a href="https://sskrkvsk.github.io/credit-card/">Project Page</a>
+          </div>
+        </div>
+
+        <div class="note-foot"></div>
+      </article>
+      <article id="notepad2" class="notepad display-none">
+        <header
+          class="header"
+          style="
+            background-color: aliceblue;
+            height: 55px;
+            border-bottom: 1px solid rgb(230, 230, 230);
+          "
+        >
+          <div class="header-top">
+            <div class="header-left">
+              <img src="./images/notepad.png" width="20px" alt="" />
+              <p id="notepad-name" style="margin-top: 2px">
+                Collection App - Notepad
+              </p>
+            </div>
+            <div class="header-right">
+              <span
+                class="material-symbols-sharp small-r minimize"
+                style="color: black"
+              >
+                horizontal_rule
+              </span>
+              <span
+                class="material-symbols-sharp small-r full"
+                style="padding-top: 5px; color: black"
+              >
+                check_box_outline_blank
+              </span>
+              <span
+                class="material-symbols-sharp small-r close"
+                style="color: black"
+              >
+                close
+              </span>
+            </div>
+          </div>
+          <div class="header-bottom">
+            <p class="hover">File</p>
+            <p class="hover">Edit</p>
+            <p class="hover">Format</p>
+            <p class="hover">View</p>
+            <p class="hover">Help</p>
+          </div>
+        </header>
+        <div class="content">
+          <h1>Collection App</h1>
+          <div class="image-container" style="flex-direction: column">
+            <video
+              src="./images/screenshots/collection.vid.mp4"
+              alt=""
+              width="600px"
+              autoplay
+              loop
+            />
+          </div>
+          <p class="about">
+            - Collection is an application designed for retrieving data from an
+            API or creating custom items to store within a database.
+          </p>
+          <p class="about">
+            - It was made using component oriented building logic from React to
+            show my understanding of back-end work with storing and fetching
+            data (in this case from SQL)
+          </p>
+          <div class="links">
+            <a href="https://github.com/sskrkvsk/collection-app">GitHub</a>
+            <!-- <a href="">Project Page</a> -->
+          </div>
+        </div>
+
+        <div class="note-foot"></div>
+      </article>
+      <article id="notepad3" class="notepad display-none">
+        <header
+          class="header"
+          style="
+            background-color: aliceblue;
+            height: 55px;
+            border-bottom: 1px solid rgb(230, 230, 230);
+          "
+        >
+          <div class="header-top">
+            <div class="header-left">
+              <img src="./images/notepad.png" width="20px" alt="" />
+              <p id="notepad-name" style="margin-top: 2px">
+                Login Page - Notepad
+              </p>
+            </div>
+            <div class="header-right">
+              <span
+                class="material-symbols-sharp small-r minimize"
+                style="color: black"
+              >
+                horizontal_rule
+              </span>
+              <span
+                class="material-symbols-sharp small-r full"
+                style="padding-top: 5px; color: black"
+              >
+                check_box_outline_blank
+              </span>
+              <span
+                class="material-symbols-sharp small-r close"
+                style="color: black"
+              >
+                close
+              </span>
+            </div>
+          </div>
+          <div class="header-bottom">
+            <p class="hover">File</p>
+            <p class="hover">Edit</p>
+            <p class="hover">Format</p>
+            <p class="hover">View</p>
+            <p class="hover">Help</p>
+          </div>
+        </header>
+        <div class="content">
+          <h1>Login page</h1>
+          <div
+            class="image-container"
+            style="flex-direction: column; gap: 20px"
+          >
+            <img src="./images/screenshots/login.png" alt="" width="600px" />
+            <img src="./images/screenshots/login-s.png" alt="" width="600px" />
+          </div>
+          <p class="about">
+            - Login page that can register new user, login if registered or
+            authenticate via Google, Facebook, GitHub. Use of Passport.js and
+            Sessions.
+          </p>
+          <p class="about">
+            - It uses local SQLite database, so it does store data without
+            external server.
+          </p>
+          <p class="about">
+            - Google acc for testing: checkauthfunc@gmail.com password:
+            check123auth.
+          </p>
+          <div class="links">
+            <a href="https://github.com/sskrkvsk/auth-page/tree/main">GitHub</a>
+            <a href="https://auth-page-production.up.railway.app/"
+              >Project Page</a
+            >
+          </div>
+        </div>
+
+        <div class="note-foot"></div>
+      </article>
+      <article id="notepad4" class="notepad display-none">
+        <header
+          class="header"
+          style="
+            background-color: aliceblue;
+            height: 55px;
+            border-bottom: 1px solid rgb(230, 230, 230);
+          "
+        >
+          <div class="header-top">
+            <div class="header-left">
+              <img src="./images/notepad.png" width="20px" alt="" />
+              <p id="notepad-name" style="margin-top: 2px">
+                Simon Game - Notepad
+              </p>
+            </div>
+            <div class="header-right">
+              <span
+                class="material-symbols-sharp small-r minimize"
+                style="color: black"
+              >
+                horizontal_rule
+              </span>
+              <span
+                class="material-symbols-sharp small-r full"
+                style="padding-top: 5px; color: black"
+              >
+                check_box_outline_blank
+              </span>
+              <span
+                class="material-symbols-sharp small-r close"
+                style="color: black"
+              >
+                close
+              </span>
+            </div>
+          </div>
+          <div class="header-bottom">
+            <p class="hover">File</p>
+            <p class="hover">Edit</p>
+            <p class="hover">Format</p>
+            <p class="hover">View</p>
+            <p class="hover">Help</p>
+          </div>
+        </header>
+        <div class="content">
+          <h1>Simon Game</h1>
+          <div class="image-container">
+            <img
+              src="./images/screenshots/samon-game.png"
+              alt=""
+              width="600px"
+            />
+          </div>
+          <p class="about">
+            - Simple memory game with complete lvlup and gameover logic.
+          </p>
+          <p class="about">
+            - Project to show understanding of interactivity and gamification.
+          </p>
+          <p class="about">
+            - How to play: repeat whole sequence from the begining.
+          </p>
+          <div class="links">
+            <a href="https://github.com/sskrkvsk/Simon-Game/tree/main"
+              >GitHub</a
+            >
+            <a href="https://sskrkvsk.github.io/Simon-Game/">Project Page</a>
+          </div>
+        </div>
+
+        <div class="note-foot"></div>
+      </article>
     </main>
+    <!-- TASKBAR -->
     <footer class="taskbar">
       <div class="left">
         <div class="start"></div>
         <span class="material-symbols-sharp search-icon"> search </span>
         <input type="text" class="search" placeholder="Search" />
-        <div class="explorer explorer-active" style="margin-left: 3px"></div>
+        <div class="explorer" style="margin-left: 3px"></div>
         <div class="vscode"></div>
         <div class="chrome"></div>
       </div>

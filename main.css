@@ -15,12 +15,6 @@ h1, h2, h3, p, ul, ol {
     padding: 0;
     list-style: none;
 }
-a {
-    text-decoration: none;
-}
-/* img {
-    display: block;
-} */
 input {
     border: none;
     outline-color: none;
@@ -37,8 +31,8 @@ input {
 }
 .recycle-bin {
     position: absolute;
-    top: 20px;
-    left: 30px;
+    top: 10px;
+    left: 20px;
     padding: 10px 60px;
     height: 120px;
     width: 90px;
@@ -157,6 +151,7 @@ input {
     opacity: 0;
 }
 .window-full {
+    transition: none;
     top: 0px;
     left: 0px;
     height: 100%;
@@ -174,6 +169,15 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.header-bottom {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    gap: 10px;
+    font-size: 13px;
 }
 .header-top {
     height: 60%;
@@ -308,7 +312,7 @@ input {
     margin-top: 5px;
     font-size: 13px;
 }
-.folder {
+.folder, .file {
     display: flex;
 }
 .name-thing {
@@ -354,16 +358,69 @@ input {
     border-right: 1px solid rgb(138, 138, 138);
     color: rgb(224, 224, 224);
 }
+/* NOTEPAD ///////////////////////////////////////// */
+
+.notepad {
+    margin: 0 auto;
+    width: 700px;
+    height: calc(100% - 40px);
+    background-color: aliceblue;
+    color: black;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+}
+.hover {
+    padding: 3px;
+}
+.content {
+    overflow-y: scroll;
+    height: 100%;
+}
+.note-foot {
+    background-color: rgb(230, 230, 230);
+    height: 30px;
+}
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 14px;
+    margin-bottom: 20px;
+}
+.about {
+    font-size: 1.4rem;
+    padding: 20px;
+}
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.links {
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    font-size: 1.1rem;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* UTILITY /////////////////////////////////////////*/
 .transparent {
     opacity: 0;
 }
 .display-none {
     display: none;
 }
-.explorer:hover, .recycle-bin:hover, .vscode:hover, .chrome:hover, .folder-shortcut:hover, .foot-thing:hover, .start:hover, .nav-p:hover, .sort-item:hover, .tab:hover, .small-r:hover {
+.explorer:hover, .recycle-bin:hover, .vscode:hover, .chrome:hover, .folder-shortcut:hover, .foot-thing:hover, .start:hover, .nav-p:hover, .sort-item:hover, .tab:hover, .folder:hover, .back:hover, .file:hover {
     background-color: rgba(255, 255, 255, 0.2);
     cursor: default;
       /* border: 1px solid rgba(255, 255, 255, 0.4); */
+}
+.small-r:hover, .hover:hover {
+    background-color: rgba(136, 136, 136, 0.2);
+    cursor: default;
 }
 .close:hover {
     background-color: rgba(201, 13, 13, 0.9);
@@ -371,6 +428,9 @@ input {
 .active {
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.active-nob {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 .explorer-active {
     border-bottom: 2px solid rgb(185, 185, 185);
