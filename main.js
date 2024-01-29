@@ -221,9 +221,18 @@ const showNote = (file, note) => {
         });
     });
 }
-
-
 showNote(file0, notepad1);
 showNote(file1, notepad2);
 showNote(file2, notepad3);
 showNote(file3, notepad4);
+
+const time = document.querySelector('.time');
+const currentTime = () => {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    return `${hours}:${minutes}`;
+}
+document.addEventListener('DOMContentLoaded', () => {
+    time.textContent = currentTime();
+});
